@@ -1,0 +1,29 @@
+em { 
+  font-weight: bold; 
+}
+h3 {
+  -webkit-margin-after: 0em;
+}
+h3 a {
+  text-decoration: none;
+}
+h3 a:hover {
+  text-decoration: underline;
+}
+md-list-item {
+  white-space: nowrap;
+  max-width: 80%;
+  text-align: left;
+  -webkit-margin-after: 2em;
+}
+.origin, cite a:visited  {
+  position: static;
+  font-style: normal;
+  color: #006621;
+}
+.descr {
+  position: static;
+  line-height: 1.4;
+  word-wrap: break-word;
+  margin-bottom: 2em;
+}
