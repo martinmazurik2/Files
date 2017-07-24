@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations" : [
+        {
+            "name": "Launch index.html",
+            "type": "chrome",
+            "request": "launch",
+            // File currently being viewed
+            "file": "src/index.html"
+        },
+        {
+            "name": "Launch localhost with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000/index.html",
+            "sourcemaps": true,
+            "webRoot": "."
+        },
+        {
+            "name": "Attach",
+            "type": "chrome",
+            "request": "attach",
+            "port": 3000
+        }
+    ]
+}

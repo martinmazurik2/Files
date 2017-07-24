@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row" *ngIf="repository">
+        <h4>Contributors for {{ repository.name }}</h4>
+        <br />
+        <div *ngIf="!contribs.length">
+            No contributors found
+        </div>
+    </div>
+    <div *ngIf="!repository" class="row">
+      &nbsp
+      <h4>no contributors found.</h4>
+    </div>
+</div>

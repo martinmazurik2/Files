@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row card-container">
+        <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let repository of repositories;trackBy:trackby.repository">
+            <div class="card">
+                <div class="card-header">
+                    <a [routerLink]="['/repos',repositories.id,'details']" class="white">
+                        {{ repository.name }}
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="clearfix">
+                        <div class="pull-left card-body-left">
+                            <a href="#" class="white">
+                                <img src="images/spindle.png" class="card-image" />
+                            </a>
+                        </div>
+                        <div class="pull-left card-body-right">
+                            <div class="card-body-content">{{repository.description | trim }},<br> Id:{{repository.id}},<br> {{repository.size}} kB</div>
+                            <a [routerLink]="['/contribs',repository.name]">Contributors</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="!repositories.length">
+            No Records Found
+        </div>
+    </div>
+</div>
